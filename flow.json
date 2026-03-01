@@ -11,6 +11,27 @@
 			"aliases": {
 				"testing": "0000000000000007"
 			}
+		},
+		"FlowPay": {
+			"source": "cadence/contracts/FlowPay.cdc",
+			"aliases": {
+				"emulator": "f8d6e0586b0a20c7",
+				"testing": "0000000000000007"
+			}
+		},
+		"FlowPaySchedule": {
+			"source": "cadence/contracts/FlowPaySchedule.cdc",
+			"aliases": {
+				"emulator": "f8d6e0586b0a20c7",
+				"testing": "0000000000000007"
+			}
+		},
+		"FlowPayTransactionHandler": {
+			"source": "cadence/contracts/FlowPayTransactionHandler.cdc",
+			"aliases": {
+				"emulator": "f8d6e0586b0a20c7",
+				"testing": "0000000000000007"
+			}
 		}
 	},
 	"dependencies": {
@@ -142,7 +163,10 @@
 		"emulator": {
 			"emulator-account": [
 				"Counter",
-				"CounterTransactionHandler"
+				"CounterTransactionHandler",
+				"FlowPaySchedule",
+				"FlowPay",
+				"FlowPayTransactionHandler"
 			]
 		}
 	}
